@@ -1,55 +1,125 @@
 <!DOCTYPE>
 <html>
-	
-	
+		
 	<head>
 		
 		<charset="utf-8">
-		<title> Stage Two </title>	
+		<title> Travel Page </title>	
 		
 		<style>
 		
 		* {
-				box-sizing: border-box;
-		}
+			box-sizing: border-box;}
+	
+		.row {	
+			content: "";
+			display: table;	
+			clear: both; }
 		
-		.row {
-				content: "";
-				display: table;
-				clear: both;
-		}
-		
-		.column{
+		.columnLeft {
 			float: left;
-			width: 50%
-			padding: 10px;
-		}
+			width: 30%
+			padding: 20px; }
+			
+		.columnRight {		
+			float: right;
+			width: 70%
+			padding: 20px; }	
+			
+			
+		.pic {
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			margin-bottom: 25px;
+			width: 90%;
+			background-color: black;
+			box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.2); }
+
+		.box {
+			margin-top: 20%;
+			display: block;
+			padding-left: 15px;
+			padding-right: 15px;
+			border: 2px solid #394b58;
+ 			border-radius: 7px; }	
 		
+
+		.row {
+			content: "";
+			display: table;
+			clear: both; }
+		
+		.columnLeft50 {
+			float: left;
+			width: 50%;
+			padding-top: 0px;
+			padding-right: 15px;
+			padding-bottom: 10px;
+			padding-left: 15px; }
+		
+		.columnRight50 {
+			float: right;
+			width: 50%;
+			padding-top: 0px;
+			padding-right: 15px;
+			padding-bottom: 10px;
+			padding-left: 15px; }
+
+		
+		
+		ul.nav {
+			list-style-type: none;
+			margin: 0px;
+  			padding: 0px;
+ 			background-color: lightgrey;
+  			overflow: hidden;
+			box-shadow: 1px 1px 9px 3px rgba(0, 0, 0, 0.2);}
+
+
+
+		li a {
+			float: left;
+			display: block;
+			color: firebrick;
+			padding: 8px 16px;
+			text-align: left; }
+	
+		li a:hover {
+			background-color: lightsteelblue;
+			color: white }
+
 		body {
-		background-color: black}
-		
-		#back {
-		color: white}
+			background-color: lightyellow; 
+			color: firebrick;
+			font-family: "courier new", monospace, serif;
+			font-weight: bold; }
 		
 		p {
-		color: white}
-		
-		h3 {
-		color: white}
+			color: indianred; }
 		
 		h1 {
-		color: white}
-		
+			color: firebrick; }
+	
 		h2 {
-		color: white}
-		
+			color: firebrick; }
+	
+		h3 {
+			color: firebrick; }
+		    
 		</style>
+
 		
 	</head>
 	
 	
 	<body>
-	
+		<ul class="nav">
+		<li><a href="index.html">Home<a/></li>
+		<li><a href="travelpage.html">Travel Page<a/></li>
+		<li><a href="dogs.html">Top Ten Dogs<a/></li>
+		</ul>
+		<br>
 		<h1><str>Top Ten Dogs</str></h2>
 		<br>
 		<br>
