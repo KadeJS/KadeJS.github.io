@@ -2,31 +2,34 @@
 <html>
 	<head>
 	  <title> Travel Page </title>
-      <meta charset="utf-8">
-      <link rel="stylesheet" type="text/css" href="stylesheet.css">
+      	<meta charset="utf-8">
 
 		<style>
 		
+	/* Makes the box for the menu bar visible as a box */
 		* {
-			box-sizing: border-box;}
+			box-sizing: border-box; }
 	
+	/* Creates a table type of layout for everything in the row class */
 		.row {	
 			content: "";
 			display: table;	
 			clear: both; }
 		
-		.columnLeft {
+	/* Sets the width and padding for everything in the columnLeft class alongside pushing it all to the left */
+			.columnLeft {
 			float: left;
 			width: 30%
 			padding: 20px; }
 			
+	/* Sets the width and padding for everything in the columnRight class alongside pushing it all to the right */
 		.columnRight {		
 			float: right;
 			width: 70%
 			padding: 20px; }	
 			
-			
-		.pic {
+	/* Adds specifics for each image in the pic class. Shows them as blocks, automatically assigns them based on whatever side theyre on, and gives them a background color and shadow effect surrounding each image */
+			.pic 
 			display: block;
 			margin-left: auto;
 			margin-right: auto;
@@ -35,7 +38,8 @@
 			background-color: black;
 			box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.2); }
 
-		.box {
+	/* Adds some detais to the box at the bottom of the website. Shows it as a block with some padding with color and border */
+			.box {
 			margin-top: 20%;
 			display: block;
 			padding-left: 15px;
@@ -43,12 +47,7 @@
 			border: 2px solid #394b58;
  			border-radius: 7px; }	
 		
-
-		.row {
-			content: "";
-			display: table;
-			clear: both; }
-		
+	/* Moves everything in the columnLeft50 class to the left and adds some padding around it. */
 		.columnLeft50 {
 			float: left;
 			width: 50%;
@@ -57,6 +56,7 @@
 			padding-bottom: 10px;
 			padding-left: 15px; }
 		
+	/* Makes everything in the class move to the right side of the screen, taking up half the screen. Also adds space on all sides.	*/
 		.columnRight50 {
 			float: right;
 			width: 50%;
@@ -66,7 +66,7 @@
 			padding-left: 15px; }
 
 		
-		
+	/* Makes the navigation bar lightgrey, and adds a shadow effect around it for aesthetic */
 		ul.nav {
 			list-style-type: none;
 			margin: 0px;
@@ -75,8 +75,7 @@
   			overflow: hidden;
 			box-shadow: 1px 1px 9px 3px rgba(0, 0, 0, 0.2);}
 
-
-
+	/* Changes the color of the links in the navigation bar to firebrick, adds some padding, and aligns it to the left */
 		li a {
 			float: left;
 			display: block;
@@ -84,16 +83,19 @@
 			padding: 8px 16px;
 			text-align: left; }
 	
+	/* Changes the color of the box surrounding each link to lightsteelblue and changes the link itself to white in the navigation bar */
 		li a:hover {
 			background-color: lightsteelblue;
 			color: white }
 
+	/* Changes the color of everything in the body to firebrick and the background lightyellow. Also adds some text style modifications */
 		body {
 			background-color: lightyellow; 
 			color: firebrick;
 			font-family: "courier new", monospace, serif;
 			font-weight: bold; }
 		
+	/* Changes the color of each of the categories to their respective colors */
 		p {
 			color: indianred; }
 		
@@ -105,7 +107,9 @@
 	
 		h3 {
 			color: firebrick; }
-		    
+			
+		h4 {
+			color: firebrick; }
 		</style>
 	</head>
 	
@@ -115,10 +119,10 @@
 		<ul class="nav">
 		<li><a href="index.html">Home<a/></li>
 		<li><a href="travelpage.html">Travel Page<a/></li>
+		<li><a href="cookbook.html">Cook Book<a/></li>
+		<li><a href="blog.html">Blog<a/></li>
 		<li><a href="dogs.html">Top Ten Dogs<a/></li>
 		</ul>
-		<br>
-		
 		<h1> Travel Page </h1>
 		<br>			
 		<h2> Ancient China, 206 B.C. - 220 A.D. </h2>
