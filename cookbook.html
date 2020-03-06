@@ -11,13 +11,13 @@
 			box-sizing: border-box; }
 	
 	/* Creates a table type of layout for everything in the row class */
-		.row {	
+		.row {
 			content: "";
-			display: table;	
+			display: table;
 			clear: both; }
 		
 	/* Sets the width and padding for everything in the columnLeft class alongside pushing it all to the left */
-			.columnLeft {
+		.columnLeft {
 			float: left;
 			width: 30%
 			padding: 20px; }
@@ -28,25 +28,6 @@
 			width: 70%
 			padding: 20px; }	
 			
-	/* Adds specifics for each image in the pic class. Shows them as blocks, automatically assigns them based on whatever side theyre on, and gives them a background color and shadow effect surrounding each image */
-			.pic 
-			display: block;
-			margin-left: auto;
-			margin-right: auto;
-			margin-bottom: 25px;
-			width: 90%;
-			background-color: black;
-			box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.2); }
-
-	/* Adds some detais to the box at the bottom of the website. Shows it as a block with some padding with color and border */
-			.box {
-			margin-top: 20%;
-			display: block;
-			padding-left: 15px;
-			padding-right: 15px;
-			border: 2px solid #394b58;
- 			border-radius: 7px; }	
-		
 	/* Moves everything in the columnLeft50 class to the left and adds some padding around it. */
 		.columnLeft50 {
 			float: left;
@@ -55,7 +36,7 @@
 			padding-right: 15px;
 			padding-bottom: 10px;
 			padding-left: 15px; }
-		
+			
 	/* Makes everything in the class move to the right side of the screen, taking up half the screen. Also adds space on all sides.	*/
 		.columnRight50 {
 			float: right;
@@ -63,9 +44,58 @@
 			padding-top: 0px;
 			padding-right: 15px;
 			padding-bottom: 10px;
-			padding-left: 15px; }
-
+			padding-left: 15px; }		
+			
+	/* Aligns the text to the left and adds padding along with a specific for width */
+		.recipeColumn {
+ 			float: left;
+  			width: 50%;
+  			padding-left: 20px;
+			padding-right: 10px;
+			padding-top: 10px;
+			padding-bottom: 10px; }		
 		
+	/* changes width setting for everything in div class recipeColumn */	
+		div.recipeColumn {
+		width: 100%; }}		
+			
+	/* displays those in :after as a table to allow for items to be laid out as intended */
+		.recipeRow:after {
+  			content: "";
+  			display: table;
+  			clear: both; }		
+			
+	/* makes some defaults, such as the margin, padding, and height to every item */	
+		.content {
+ 		 	margin-left: 240px;
+  			padding: 1px 16px;
+  			height: 100%; 
+  			width: 100%}	
+		
+	/* adds margin defaults for everything in div content */
+		div.content {
+			margin-top: 40px;
+			margin-left: 0; }		
+			
+	/* Adds specifics for each image in the pic class. Shows them as blocks, automatically assigns them based on whatever side theyre on, and gives them a background color and shadow effect surrounding each image */
+		.pic {
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			margin-bottom: 25px;
+			width: 90%;
+			background-color: black;
+			box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.2); }
+
+	/* Adds some detais to anything in the box class. Shows it as a block with some padding with color and border */
+		.box {
+			margin-top: 20%;
+			display: block;
+			padding-left: 15px;
+			padding-right: 15px;
+			border: 2px solid #394b58;
+  			border-radius: 7px;}	
+	
 	/* Makes the navigation bar lightgrey, and adds a shadow effect around it for aesthetic */
 		ul.nav {
 			list-style-type: none;
@@ -73,58 +103,101 @@
   			padding: 0px;
  			background-color: lightgrey;
   			overflow: hidden;
-			box-shadow: 1px 1px 9px 3px rgba(0, 0, 0, 0.2);}
+			box-shadow: 1px 1px 9px 3px rgba(0, 0, 0, 0.2); }
+			
 
 	/* Changes the color of the links in the navigation bar to firebrick, adds some padding, and aligns it to the left */
-		li a {
+		li a.nav {
 			float: left;
 			display: block;
 			color: firebrick;
 			padding: 8px 16px;
 			text-align: left; }
-	
+			
+	/* Changes the color of lists in the row class along with adding padding and aligning it to the left */
+		li a.recipeLink {
+			color: firebrick;
+			padding: 8px 16px;
+			text-align: left; }
+
 	/* Changes the color of the box surrounding each link to lightsteelblue and changes the link itself to white in the navigation bar */
 		li a:hover {
 			background-color: lightsteelblue;
 			color: white }
+			
+	/* Displays everything in the recipeRow class as a table */			
+		.recipeRow {
+  			content: "";
+  			float: left;
+  			width: 100%;
+  			display: table;
+  			clear: both; }
+			
+	/* Changes width for items in the td left and right class */
+		td.left {
+			width: 275px; }
 
+		td.right {
+			width: 125px; }
+	
+	/* Changes color, assigns float to left, and changes width to 80% to all in an ol in the instructions class */
+		ol .instructions {
+			color: indianred;
+			float: left;
+			width: 80%; }
+			
+	/* Aligns text with the alignLeft id to the left */
+		#alignLeft {
+			text-align: left;}
+	
 	/* Changes the color of everything in the body to firebrick and the background lightyellow. Also adds some text style modifications */
 		body {
+			margin: 0;
 			background-color: lightyellow; 
 			color: firebrick;
 			font-family: "courier new", monospace, serif;
 			font-weight: bold; }
-		
-	/* Changes the color of each of the categories to their respective colors */
+			
+	/* Aligns the text to anything within an ol list to the left */
+		ol {
+			text-align: left; }		
+			
+	/* Changes the color of each of the categories to their respective colors and aligns text to center*/
 		p {
-			color: indianred; }
+			color: indianred;
+			text-align: center; }
 		
 		h1 {
-			color: firebrick; }
+			color: firebrick;
+			text-align: center; }
 	
 		h2 {
-			color: firebrick; }
+			color: firebrick; 
+			text-align: center;}
 	
 		h3 {
-			color: firebrick; }
+			color: firebrick; 
+			text-align: center; }
 			
 		h4 {
-			color: firebrick; }
+			color: firebrick;
+			text-align: center; }
 		</style>
 
 
 </head>
 <body>
 	
-		<ul class="nav">
-		<li><a href="index.html">Home<a/></li>
-		<li><a href="travelpage.html">Travel Page<a/></li>
-		<li><a href="cookbook.html">Cook Book<a/></li>
-		<li><a href="blog.html">Blog<a/></li>
-		<li><a href="dogs.html">Top Ten Dogs<a/></li>
-		</ul>
-		<br>
+	<ul class="nav">
+	<li><a href="index.html" class="nav">Home<a/></li>
+	<li><a href="travelpage.html" class="nav">Travel Page<a/></li>
+	<li><a href="cookbook.html" class="nav">Cook Book<a/></li>
+	<li><a href="blog.html" class="nav">Blog<a/></li>
+	<li><a href="dogs.html" class="nav">Top Ten Dogs<a/></li>
+	</ul>
+	<br>
 
+	<div class="content">
 		<h1> Cook Book </h1>
 		<br>
 		<h3> Cooking For One: 
@@ -136,78 +209,214 @@
 		
 		<div class="row">
 			<ol>
-				<li>
-					<a href="#text">text</a>
-				</li>
-				
-				<li>
-					<a href="#text">text</a>
-				</li>
-				
-				<li>
-					<a href="#text">text</a>
-				</li>
+				<li> <a href="#ramen" class="recipeLink">Instant Ramen</a> </li>
+				<br>
+				<li> <a href="#pizza" class="recipeLink">Frozen Pizza</a> </li>
+				<br>
+				<li> <a href="#bread" class="recipeLink">Bread</a> </li>
 			</ol>
 		</div>
+		
 		<br>
 		<hr>
 		<br>
 		
 		<div class="recipeRow">
-			<div id="text" class="recipeColumn">
-				<h2> text </h2>
-				<p> text </p>
-			</div>
-		
 			<div class="recipeColumn">
-				<img class="pic" style="width: 50%" src="Images/text.jpg">	
+				<h2 id="ramen"> Instant Ramen </h2>
+				<p style="margin-left: 25 pix; margin-right: 25px"> Instant ramen has almost cemented it's place in society as the best go to meal for those just scraping to get by. It's quick, it's easy, it tastes decent, and most importantly, you can get it for super cheap. Like, just go any convenience store and you can find a bunch of them for literally a single quarter. You could eat three square meals a day for an entire year for just $142.65! Ramen is also just one of those dishes that you can almost entirely customize, this way, every meal can have variety!. Worry not, even if your mouth quivers at the thought of having one more bowl of instant noodles, at the end of the day, you'll find yourself satisfied with your meal and walk away knowing you just saved some of your hard earned cash. </p>
 			</div>
 			
-			<div class="recipeRow">	
-				<div class="recipeColumn">
-					<table style="margin-left: auto; margin-right: auto;" cellpadding="2" border="2" >	
-						<tbody>
-							
-							<tr>				
-								<td class="left">
-									<h3> Ingredient </h3>
-								</td>
+			<div class="recipeColumn">
+				<img class="pic" style="width: 50%" src="Images/ramen.jpg" >	
+			</div>
+		</div>
+		
+		<div class="recipeRow">	
+			<div class="recipeColumn">				
+				<table style="margin-left: auto; margin-right: auto;" cellpadding="2" border="2" >	
+					<tbody>				
+						<tr>				
+							<td class="left">
+								<h3> Ingredient </h3>
+							</td>
 					
-								<td class="right">
-									<h3> Quantity </h3>
-								</td>		
-							</tr>	
+							<td class="right">
+								<h3> Quantity </h3>
+							</td>		
+						</tr>	
 											
-							<tr>	
-								<td class="left">
-									text
-								</td>			
+						<tr>	
+							<td class="left">
+								One Instant Ramen of your liking								
+							</td>			
 								
-								<td class="right"> 
-									text
-								</td>								
-							</tr>
-							
-							<tr>	
-								<td class="left">
-									text
-								</td>			
-								
-								<td class="right"> 
-									text
-								</td>								
-							</tr>
-						</tbody>
-					</tale>
-				</div>
+							<td class="right"> 
+									1
+							</td>								
+						</tr>
+					</tbody>
+				</table>
+			</div>
+				
+			<div class="recipeColumn">
+				<h3 id="alignLeft"> Instructions </h3>
+					<ol>
+						<li> Open your instant ramen packet, or cup </li>
+						<br>
+						<li> Fill a pot with water (the water will become you're broth, and can be adjusted to your liking) and boil </li>
+						<br>
+						<li> Once boiled, place your ramen into the water and stir occasionally until the noodles have broken apart </li>
+						<br>
+						<li> Once the noodles have softened, insert the flavoring packet and any other vegetables/toppings/seasonings you like (I personally recommend adding an egg and several spoons of soy sauce)
+						<br>
+						<li> Pour into a bowl and enjoy! </li>
+						<br>
+						<p> Alternatively, you can simply microwave it as well, though, the quality will significantly change. Simply put the ramen and water into a microwavable bowl and microwave for about 3-5 minutes. Add any extra vegetables/toppings/seasonings after letting the ramen cool and enjoy! (Note: It's advised to <strong>NOT</strong> microwave any kind of cup noodles in foam cups, as the foam can melt from the heat and become harmful) </p>
+						<br>
+						<br>
+					</ol>
+				<a href="#top">Back to Top</a>
+			</div>	
+		</div>
+		
+		<div class="recipeRow">
+			
 			<br>
 			<hr>
 			<br>
+		
+		</div>
+		
+		
+		
+		
+		
+		
+				<div class="recipeRow">
+			<div class="recipeColumn">
+				<h2 id="pizza"> Pizza </h2>
+				<p style="margin-left: 25 pix; margin-right: 25px"> As probably <em>everyone</em> knows, pizza is literally one of the best foods for any occasion. Eat it with the family, eat it at events, eat it at parties, eat it by yourself, you can eat pizza any time, anywhere. And with yourself in the financial situation you're in, you'll find pizza to be a <strong>godsend</strong>. </p>
+			</div>
 			
+			<div class="recipeColumn">
+				<img class="pic" style="width: 50%" src="Images/pizza.jpg" >	
+			</div>
+		</div>
+		
+		<div class="recipeRow">	
+			<div class="recipeColumn">				
+				<table style="margin-left: auto; margin-right: auto;" cellpadding="2" border="2" >	
+					<tbody>				
+						<tr>				
+							<td class="left">
+								<h3> Ingredient </h3>
+							</td>
+					
+							<td class="right">
+								<h3> Quantity </h3>
+							</td>		
+						</tr>	
+											
+						<tr>	
+							<td class="left">
+								One Instant frozen pizza of your choice (except Hawaiian, because that's a <em><strong>sin</strong></em>)								
+							</td>			
+								
+							<td class="right"> 
+									1 
+							</td>								
+						</tr>
+					</tbody>
+				</table>
+			</div>
+				
+			<div class="recipeColumn">
+				<h3 id="alignLeft"> Instructions </h3>
+					<ol>
+						<li> Take off the plastic wrapping surrounding the pizza once removed from the box </li>
+						<br>
+						<li> Pre-heat oven to 450 and set the oven rack to the middle </li>
+						<br>
+						<li> Once oven is done heating, place your pizza into the rack (keep in mind, it's best to not cook on pan or cookie sheet if possible) </li>
+						<br>
+						<li> Bake for 15-20 minutes, or until pizza is golden brown </li>
+						<br>
+						<li> Let sit for some time to cool, and then serve </li>
+						<br>
+						<br>
+					</ol>
+				<a href="#top">Back to Top</a>
+			</div>	
+		</div>
+		
+		<div class="recipeRow">
+			<br>
+			<hr>
+			<br>
+		</div>
+		
+		
+		
+		
+		
+		<div class="recipeRow">
+			<div class="recipeColumn">
+				<h2 id="bread"> Just Bread </h2>
+				<p style="margin-left: 25 pix; margin-right: 25px"> Sometimes, you just need something simple. Something so simple that you literally don't have to prep anything. That, my friend, is exactly what bread is. You might be wondering, "what's so special about bread anyways?" and to that, I am sincerely appalled at your ignorance. Bread is here in this fine selection of <em>poor people</em> gourmet foods not because of it being especially cheap or especially good even. It's here because of it's <strong>versatility</strong>! To elaborate, bread is simply good to be eaten with anything. It can have butter, jelly, cinnamon-suger, honey, hotdogs, egg salad, anything! Bread provides what the body needs in nutrients, and whatever else you want on can provide in flavor, making for a truly unique meal. </p>
+			</div>
+			
+			<div class="recipeColumn">
+				<img class="pic" style="width: 50%" src="Images/bread.jpg" >	
+			</div>
+		</div>
+		
+		<div class="recipeRow">	
+			<div class="recipeColumn">				
+				<table style="margin-left: auto; margin-right: auto;" cellpadding="2" border="2" >	
+					<tbody>				
+						<tr>				
+							<td class="left">
+								<h3> Ingredient </h3>
+							</td>
+					
+							<td class="right">
+								<h3> Quantity </h3>
+							</td>		
+						</tr>	
+											
+						<tr>	
+							<td class="left">
+								Bread								
+							</td>			
+								
+							<td class="right"> 
+								As much as you want!
+							</td>								
+						</tr>
+					</tbody>
+				</table>
+			</div>
+				
+			<div class="recipeColumn">
+				<h3 id="alignLeft"> Instructions </h3>
+					<ol>
+						<li> Just open the package of bread and put want you want on it, or eat it by itself, up to you really, lol. </li>
+						<br>
+						<br>
+					</ol>
+				<a href="#top">Back to Top</a>
+			</div>	
+		</div>
+		
+		<div class="recipeRow">
+			<br>
+			<hr>
+			<br>
+		</div>
+		
+	</div>
 
-			
-							
-							
-													
+												
 </body>
 </html>
